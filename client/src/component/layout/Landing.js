@@ -19,6 +19,12 @@ const Landing = () => {
                             Login
                         </Link>
                     </div>
+                    <p> or </p>
+                    <div className='buttons'>
+                        <Link to='/welcome' className='btn btn-light'>
+                            Continue as guest
+                        </Link>
+                    </div>
                 </div>
             </div>
         </section>
