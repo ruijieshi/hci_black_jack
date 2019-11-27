@@ -7,6 +7,7 @@ const Landing = () => {
             <div className='dark-overlay'>
                 <div className='landing-inner'>
                     <h1 className='x-large'>Welcome to our black jack game!</h1>
+                    <h2> Sign up to receive events update </h2>
                     <p className='lead'>
                         By HCI blackjack group
                     </p>

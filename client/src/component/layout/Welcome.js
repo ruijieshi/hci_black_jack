@@ -39,6 +39,7 @@ class Welcome extends React.Component {
     return (
         <section className='welcome'>
                 <h1>welcome to our black jack game!</h1>
+                <h2> Your start money: 100 </h2>
                 {
                   this.state.showVideo
 
