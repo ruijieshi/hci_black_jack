@@ -25,6 +25,11 @@ const Landing = () => {
                             Continue as guest
                         </Link>
                     </div>
+                    <br/>
+                    <h1>Disclaimer</h1>
+                    <p className='lead'>
+                        The website is only for entertainment only. All the money are no real money.
+                    </p>
                 </div>
             </div>
         </section>
