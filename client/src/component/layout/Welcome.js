@@ -39,7 +39,7 @@ class Welcome extends React.Component {
     return (
         <section className='welcome'>
                 <h1>welcome to our black jack game!</h1>
-                <h2> Your start money: 100 </h2>
+                <h2> Your start money: 5000 </h2>
                 {
                   this.state.showVideo
 
@@ -52,7 +52,7 @@ class Welcome extends React.Component {
                       onReady={_onReady}
                     />
                     <button className="button" onClick={()=>{
-                       window.location.href = 'http://127.0.0.1:8887/index_game.html'
+                       window.location.href = 'https://dry-beyond-45426.herokuapp.com/'
                     }}>
                        Finish and Resdy to roll!</button>
 
@@ -73,7 +73,7 @@ class Welcome extends React.Component {
                            </div>
                            <div className="actions">
                              <button className="button" onClick={()=>{
-                               window.location.href = 'http://127.0.0.1:8887/index_game.html'
+                               window.location.href = 'https://dry-beyond-45426.herokuapp.com/'
                              }}> Yes, I have played before. Take me to the game.</button>
 
                              <button className="button" onClick={()=>{
