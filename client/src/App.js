@@ -11,6 +11,7 @@ import NavBar from './component/layout/NavBar';
 import Welcome from './component/layout/Welcome';
 import store from './store';
 import setAuthToken from './utils/setAuthToken';
+import Instruction from './component/layout/Instruction'
 
 
 if (localStorage.token) {
@@ -35,6 +36,7 @@ const App = () => {
                         <Route exact path='/login' component={Login}/>
                         <Route exact path='/welcome' component = {Welcome}/>
                         <Route exact path='/register' component={Register}/>
+                        <Route exact path='/instruction' component={Instruction}/>
                     </Switch>
                 </section>
             </Fragment>
