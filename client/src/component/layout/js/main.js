@@ -93,19 +93,19 @@ function refresh() {
 	}
 	$("#bet").html("Bet："+ bet_sore);
 	if(bet_sore) {
-		options="<a href='#' id='game'>Confirm &nbsp;</a><button onClick='note(2)'>?</button>";
+		options="<a href='#' id='game'>Confirm </a><img onClick='note(2)' class='question' src='picture/desk/question.png'/>";
 	}
 	else {
-		options="<br/>Confirm&nbsp;<button onClick='note(2)'>?</button>";
+		options="<br/>Confirm <img onClick='note(2)' class='question' src='picture/desk/question.png'/>";
 	}
 	if(y_sore-bet_sore>5)
-		options+="<br/><a href='#' id='all_in'>All In &nbsp;</a><button onClick='note(3)'>?</button>";
+		options+="<br/><a href='#' id='all_in'>All In </a><img onClick='note(3)' class='question' src='picture/desk/question.png'/>";
 	else
-		options+="<br/>All In &nbsp;<button onClick='note(3)'>?</button>";
+		options+="<br/>All In <img onClick='note(3)' class='question' src='picture/desk/question.png'/>";
 	if(bet_sore)
-		options+="<br/><a href='#' id='reset'>Reset &nbsp;</a><button onClick='note(4)'>?</button>";
+		options+="<br/><a href='#' id='reset'>Reset </a><img onClick='note(4)' class='question' src='picture/desk/question.png'/>";
 	else
-		options+="<br/>Reset &nbsp;<button onClick='note(4)'>?</button>";
+		options+="<br/>Reset <img onClick='note(4)' class='question' src='picture/desk/question.png'/>";
 	$("#choose").html(options);
 	$("#game").click(game);
 	$("#all_in").click(all_in);
@@ -151,16 +151,16 @@ function choosemenu()
 {
 	document.getElementById("box").innerHTML="";
 $("#message").text("Please take an action");
-var options="<a href='#' id='hit'>Hit</a>&nbsp;<button onClick='note(5)'>?</button>";
+var options="<a href='#' id='hit'>Hit </a<img onClick='note(5)' class='question' src='picture/desk/question.png'/>";
 if(y_sore>2*bet_sore)
-options+="<br/><a href='#' id='double'>Double</a>&nbsp;<button onClick='note(6)'>?</button>";
+options+="<br/><a href='#' id='double'>Double </a><img onClick='note(5)' class='question' src='picture/desk/question.png'/>";
 else
-options+="<br/>Double&nbsp;<button onClick='note(6)'>?</button>";
-options+="<br/><a href='#' id='stand'>Stand</a>&nbsp;<button onClick='note(7)'>?</button>";
+options+="<br/>Double <img onClick='note(6)' class='question' src='picture/desk/question.png'/>";
+options+="<br/><a href='#' id='stand'>Stand </a><img onClick='note(7)' class='question' src='picture/desk/question.png'/>";
 if(card[1].value!=1&&y_num==2)
-options+="<br/><a href='#' id='surrender'>Surrender</a>&nbsp;<button onClick='note(8)'>?</button>"
+options+="<br/><a href='#' id='surrender'>Surrender </a><img onClick='note(8)' class='question' src='picture/desk/question.png'/>"
 else
-options+="<br/>Surrender&nbsp;<button onClick='note(8)'>?</button>"
+options+="<br/>Surrender <img onClick='note(8)' class='question' src='picture/desk/question.png'/>"
 $("#choose").html(options).show();
 $("#hit").click(hit);
 $("#double").click(double);
@@ -250,7 +250,7 @@ window.setTimeout(function(){$('.show,#center_message,#right_top,#choose,#cards'
 else//单局结束
 {
 $("#message").text("Game Over，click\"Continue\"to start a new game");
-$("#choose").html("<a href='#' id='reset'>Continue&nbsp;</a><button onClick='note(10)'>?</button>").hide().fadeIn(500);
+$("#choose").html("<a href='#' id='reset'>Continue <img onClick='note(10)' class='question' src='picture/desk/question.png'/>").hide().fadeIn(500);
 $("#reset").click(bet);
 }
 });
@@ -333,7 +333,7 @@ window.setTimeout(function(){$('.show,#center_message,#right_top,#choose,#cards'
 else//单局结束
 {
 $("#message").text("Game Over，Click\"Continue\"to start a new game");
-$("#choose").html("<a href='#' id='reset'>Continue&nbsp</a><button onClick='note(10)'>?</button>").hide().fadeIn(500);
+$("#choose").html("<a href='#' id='reset'>Continue </a><img onClick='note(10)' class='question' src='picture/desk/question.png'/>").hide().fadeIn(500);
 $("#reset").click(bet);
 }
 });//慢慢浮现结果信息
@@ -386,14 +386,14 @@ $("#center_message").fadeOut(500,function(){
 								if(y_sore>1.5*bet_sore)
 								{
 									$("#message").text("1 / 11? Do you want to buy insurance？");
-									options="<a href='#' id='insurance'>Buy Insurance</a>&nbsp;<button onClick='note(9)'>?</button>";
+									options="<a href='#' id='insurance'>Insurance </a><img onClick='note(9)' class='question' src='picture/desk/question.png'/>";
 								}
 								else
 								{
 									$("#message").text("You don't have enough money for insurance");
-									options="Buy Insurance&nbsp;<button onClick='note()'>?</button>";
+									options="Insurance <img onClick='note(9)' class='question' src='picture/desk/question.png'/>";
 								}
-								options+="<br/><a href='#' id='continue'>Continue</a><button onClick='note(10)'>?</button>";
+								options+="<br/><a href='#' id='continue'>Continue </a><img onClick='note(10)' class='question' src='picture/desk/question.png'/>";
 								$("#choose").html(options);
 								$("#insurance").click(insurance);
 								$("#continue").click(choosemenu);
