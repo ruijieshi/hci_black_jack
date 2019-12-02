@@ -9,12 +9,34 @@ class Instruction extends React.Component {
     
 
     render(){
+      const opts = {
+        height: '390',
+        width: '640',
+        playerVars: { // https://developers.google.com/youtube/player_parameters
+          autoplay: 1
+        }
+      };
+      function _onReady(event) {
+        // access to player in all event handlers via event.target
+        event.target.pauseVideo();
+        console.log("25")
+      }
+
     return (
         
-      <div>
-        <h1>welcome to our black jack game!</h1>
-        <h2> Your start money: 5000 </h2>
-      </div>
+               
+            <div>
+              <YouTube
+                videoId="-9YGKFdP6sY"
+                opts={opts}
+                onReady={_onReady}
+              />
+              <button className="button" onClick={()=>{
+                 window.location.href = 'https://dry-beyond-45426.herokuapp.com/'
+              }}>
+                 Finish and Resdy to roll!</button>
+
+            </div>
 
                
     );
