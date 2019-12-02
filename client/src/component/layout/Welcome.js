@@ -39,7 +39,7 @@ class Welcome extends React.Component {
                              <button className="button" onClick={()=>{
                                 close()
                 
-                                window.location.href = 'https://dry-beyond-45426.herokuapp.com/instruction'
+                                window.location.href = 'https://young-meadow-56001.herokuapp.com/instruction'
 
                              }}>
                                 No,take me to instruction.</button>
