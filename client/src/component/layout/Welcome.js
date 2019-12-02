@@ -40,6 +40,7 @@ class Welcome extends React.Component {
                                 close()
                 
                                 window.location.href = 'https://dry-beyond-45426.herokuapp.com/instruction'
+
                              }}>
                                 No,take me to instruction.</button>
 
