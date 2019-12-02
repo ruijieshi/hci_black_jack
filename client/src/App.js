@@ -11,7 +11,7 @@ import NavBar from './component/layout/NavBar';
 import Welcome from './component/layout/Welcome';
 import store from './store';
 import setAuthToken from './utils/setAuthToken';
-import Instruction from './component/layout/Instruction'
+import Instruction from './component/layout/Instruction';
 
 
 if (localStorage.token) {
