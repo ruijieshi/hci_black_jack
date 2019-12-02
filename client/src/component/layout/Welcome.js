@@ -7,21 +7,7 @@ import Instruction from './Instruction.js'
 
 class Welcome extends React.Component {
 
-    constructor(props) {
-        super(props)
-        this.state = {
-            showVideo: false
-        }
-        this.startShowVideo = this.startShowVideo.bind(this);
-    }
-
-    startShowVideo(e){
-
-      console.log(19)
-      this.setState({
-        showVideo: !this.state.showVideo
-      })
-    }
+    
     
 
     render(){
@@ -31,14 +17,8 @@ class Welcome extends React.Component {
         <section className='welcome'>
                 <h1>welcome to our black jack game!</h1>
                 <h2> Your start money: 5000 </h2>
-                {
-                  this.state.showVideo
-
-                  ?
-
-                  <Instruction />
-
-                :
+                
+                
                 <div>
                 <Popup trigger={<button className="button"> start </button>} modal>
                         {close => (
@@ -58,7 +38,8 @@ class Welcome extends React.Component {
 
                              <button className="button" onClick={()=>{
                                 close()
-                                this.startShowVideo()
+                
+                                window.location.href = 'https://dry-beyond-45426.herokuapp.com/instruction'
                              }}>
                                 No,take me to instruction.</button>
 
@@ -77,7 +58,7 @@ class Welcome extends React.Component {
                   </Popup>
 
                 </div>
-              }
+              
         </section>
     );
   }
