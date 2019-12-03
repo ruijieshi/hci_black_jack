@@ -6,12 +6,7 @@ import YouTube from 'react-youtube';
 import Instruction from './Instruction.js'
 
 class Welcome extends React.Component {
-
-    
-    
-
     render(){
-      
 
     return (
         <section className='welcome'>
@@ -38,7 +33,6 @@ class Welcome extends React.Component {
 
                              <button className="custom-button" onClick={()=>{
                                 close()
-                
                                 window.location.href = 'https://young-meadow-56001.herokuapp.com/instruction'
 
                              }}>
