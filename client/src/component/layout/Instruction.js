@@ -31,7 +31,7 @@ class Instruction extends React.Component {
                 opts={opts}
                 onReady={_onReady}
               />
-              <button className="button" onClick={()=>{
+              <button className="custom-button" onClick={()=>{
                  window.location.href = 'https://dry-beyond-45426.herokuapp.com/'
               }}>
                  Finish and Resdy to roll!</button>

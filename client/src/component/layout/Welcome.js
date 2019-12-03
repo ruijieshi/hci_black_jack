@@ -20,23 +20,23 @@ class Welcome extends React.Component {
                 
                 
                 <div>
-                <Popup trigger={<button className="button"> start </button>} modal>
+                <Popup trigger={<button className="custom-button"> start </button>} modal>
                         {close => (
                          <div className="modal">
                            <a className="close" onClick={close}>
                              &times;
                            </a>
-                           <div className="header"> Welcome </div>
+                             <div className="header"> <h2>Welcome</h2></div>
                            <div className="content">
                              {" "}
-                             Have you play this game before? Do you want to learn how to play?
+                               <h1> Have you play this game before? Do you want to learn how to play? </h1>
                            </div>
                            <div className="actions">
-                             <button className="button" onClick={()=>{
+                             <button className="custom-button" onClick={()=>{
                                window.location.href = 'https://dry-beyond-45426.herokuapp.com/'
                              }}> Yes, I have played before. Take me to the game.</button>
 
-                             <button className="button" onClick={()=>{
+                             <button className="custom-button" onClick={()=>{
                                 close()
                 
                                 window.location.href = 'https://young-meadow-56001.herokuapp.com/instruction'
@@ -45,13 +45,13 @@ class Welcome extends React.Component {
                                 No,take me to instruction.</button>
 
                              <button
-                               className="button"
+                               className="custom-button"
                                onClick={() => {
                                  console.log("modal closed ");
                                  close();
                                }}
                              >
-                             close
+                             Close
                            </button>
                      </div>
                    </div>

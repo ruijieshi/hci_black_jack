@@ -7,10 +7,7 @@ const Landing = () => {
             <div className='dark-overlay'>
                 <div className='landing-inner'>
                     <h1 className='x-large'>Welcome to our black jack game!</h1>
-                    <h2> Sign up to receive events update </h2>
-                    <p className='lead'>
-                        By HCI blackjack group
-                    </p>
+                    <p class="lead-1"> Sign up to receive events update </p>
                     <div className='buttons'>
                         <Link to='/register' className='btn btn-signup'>
                             Sign Up
@@ -26,9 +23,11 @@ const Landing = () => {
                         </Link>
                     </div>
                     <br/>
-                    <h1>Disclaimer</h1>
-                    <p className='lead'>
-                        The website is only for entertainment only. All the money are no real money.
+                    <p className='lead-3'>
+                        By HCI blackjack group
+                    </p>
+                    <p className='lead-2'>
+                        Disclaimer: The website is only for entertainment only. All the money are no real money.
                     </p>
                 </div>
             </div>
